@@ -32,6 +32,10 @@
 				<button id="submit">Submit</button>
 			</section>
 		</main>
+		<div class="attribution flex-center">
+			<span>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a></span>
+			<span>Coded by <a href="https://github.com/MBaktygul" target="_blank">Baktygul</a></span>
+		</div>
 		<script>
 			let selectedRating = null;
 			const ratingOptions = document.querySelectorAll('.rating-option');
@@ -43,7 +47,6 @@
 					selectedRating = option.getAttribute('data-value');
 				});
 			});
-
 			submitButton.addEventListener('click', function () {
 				if (selectedRating) {
 					localStorage.setItem('selectedRating', selectedRating);

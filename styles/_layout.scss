@@ -12,28 +12,21 @@
   }
 }
 
-// .selected-rating{
-//   color: $orange;
-//   background-color: $transparent;
-//   padding: 16px;
-//   border-radius: 24px;
-// }
-
 // attribution
 .attribution {
-  padding-top: 40px;
+  padding-top: 40px 0;
   font-size: 14px;
 
- a { 
-    color: $white;
+  a { 
+    color: $light-gray;
     text-decoration: none;
-  
+
     &:visited {
-      color: $light-gray;
+      color: $orange;
     }
-  
+
     &:hover {
-        color: $orange;
+        color: $white;
     }
   }
 }
