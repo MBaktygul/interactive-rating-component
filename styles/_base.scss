@@ -11,6 +11,10 @@ section {
   margin: 20px;
   border-radius: $border-radius;
   height: 400px;
+
+  @media (min-width: 768px) {
+    max-width: 400px;
+    }
 }
 
 h2 {
