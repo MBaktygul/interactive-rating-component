@@ -1,0 +1,31 @@
+// fonts
+$font-stack: 'Overpass', sans-serif ;
+
+// font-sizes
+$font-size-base: 15px;
+
+//font-weights
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+
+// colors
+// primary
+$orange: hsl(25, 97%, 53%);
+
+// secondary
+$white: hsl(0, 0%, 100%);
+$light-gray: hsl(217, 12%, 63%);
+$dark-blue: hsl(213, 19%, 18%);
+$very-dark-blue: hsl(216, 12%, 8%);
+
+// transparent
+$transparent: transparentize($light-gray, 0.9);
+
+// breakpoints
+$breakpoint-desktop: 768px;
+
+// border-radius
+$border-radius: 10px;
+
+// letter-spacing
+$letter-spacing: 1px;

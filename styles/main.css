@@ -1,0 +1,226 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Set core body defaults */
+body {
+  height: 100vh;
+  line-height: var(--spacing-l);
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a {
+  text-decoration: none;
+}
+
+/* Make images easier to work with */
+img,
+picture, i {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  outline: none;
+}
+
+/* Font face */
+@font-face {
+  font-family: "Overpass";
+  src: url("../fonts/Overpass_400.ttf") format("truetype");
+  src: url("../fonts/Overpass_400.woff") format("woff");
+  src: url("..fonts/Overpass_400.woff2") format("woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Overpass";
+  src: url("../fonts/Overpass_700.ttf") format("truetype");
+  src: url("../fonts/Overpass_700.woff") format("woff");
+  src: url("..fonts/Overpass_700.woff2") format("woff2");
+  font-weight: 700;
+}
+body {
+  font-family: "Overpass", sans-serif;
+  background-color: hsl(216, 12%, 8%);
+  color: hsl(0, 0%, 100%);
+}
+
+section {
+  background-color: hsl(213, 19%, 18%);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  height: 400px;
+}
+
+h2 {
+  letter-spacing: 1px;
+}
+
+p {
+  line-height: 1.5;
+  color: hsl(217, 12%, 63%);
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+ul li {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(149, 158, 172, 0.1);
+  color: hsl(217, 12%, 63%);
+  padding: 16px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+ul li:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(213, 19%, 18%);
+}
+ul li:active {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(213, 19%, 18%);
+}
+ul li.selected {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(213, 19%, 18%);
+}
+
+button {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: 100%;
+  background-color: hsl(25, 97%, 53%);
+  border: none;
+  padding: 18px;
+  border-radius: 26px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+button:hover {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+}
+.icon.star {
+  background-color: rgba(149, 158, 172, 0.1);
+  padding: 16px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.attribution {
+  padding-top: 40px;
+  font-size: 14px;
+}
+.attribution a {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+}
+.attribution a:visited {
+  color: hsl(217, 12%, 63%);
+}
+.attribution a:hover {
+  color: hsl(25, 97%, 53%);
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  text-align: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  white-space: nowrap; /* Prevent line breaks */
+}/*# sourceMappingURL=main.css.map */

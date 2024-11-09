@@ -1,0 +1,16 @@
+/* Font face */
+@font-face {
+	font-family: 'Overpass';
+	src: url('../fonts/Overpass_400.ttf') format('truetype');
+	src: url('../fonts/Overpass_400.woff') format('woff');
+	src: url('..fonts/Overpass_400.woff2') format('woff2');
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'Overpass';
+	src: url('../fonts/Overpass_700.ttf') format('truetype');
+	src: url('../fonts/Overpass_700.woff') format('woff');
+	src: url('..fonts/Overpass_700.woff2') format('woff2');
+	font-weight: 700;
+}
