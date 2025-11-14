@@ -84,16 +84,16 @@ select {
 /* Font face */
 @font-face {
   font-family: "Overpass";
-  src: url("../fonts/Overpass_400.ttf") format("truetype");
-  src: url("../fonts/Overpass_400.woff") format("woff");
-  src: url("..fonts/Overpass_400.woff2") format("woff2");
+  src: url("/assets/fonts/Overpass_400.ttf") format("truetype");
+  src: url("/assets/fonts/Overpass_400.woff") format("woff");
+  src: url("/assets/fonts/Overpass_400.woff2") format("woff2");
   font-weight: 400;
 }
 @font-face {
   font-family: "Overpass";
-  src: url("../fonts/Overpass_700.ttf") format("truetype");
-  src: url("../fonts/Overpass_700.woff") format("woff");
-  src: url("..fonts/Overpass_700.woff2") format("woff2");
+  src: url("/assets/fonts/Overpass_700.ttf") format("truetype");
+  src: url("/assets/fonts/Overpass_700.woff") format("woff");
+  src: url("/assets/fonts/Overpass_700.woff2") format("woff2");
   font-weight: 700;
 }
 body {
@@ -115,6 +115,10 @@ section {
   }
 }
 
+h1 {
+  font-size: 2rem;
+}
+
 h2 {
   letter-spacing: 1px;
 }
@@ -129,32 +133,63 @@ ul {
   flex-direction: row;
   justify-content: space-between;
 }
-ul li {
+
+.icon {
   display: flex;
   justify-content: center;
-  background-color: rgba(149, 158, 172, 0.1);
-  color: hsl(217, 12%, 63%);
+}
+
+.icon.star {
+  background-color: hsla(217, 12%, 63%, 0.1);
   padding: 16px;
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  transition: background-color 0.3s;
-  cursor: pointer;
 }
-ul li:hover {
+
+.attribution {
+  font-size: 14px;
+}
+
+.attribution a {
+  color: hsl(217, 12%, 63%);
+  text-decoration: none;
+}
+.attribution a:visited {
+  color: hsl(25, 97%, 53%);
+}
+.attribution a:hover {
+  color: hsl(0, 0%, 100%);
+}
+
+.rating-option-button {
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: background-color 0.2s, color 0.2s;
+  cursor: pointer;
+  background-color: hsla(217, 12%, 63%, 0.1);
+  color: hsl(217, 12%, 63%);
+}
+.rating-option-button:hover {
   background-color: hsl(25, 97%, 53%);
   color: hsl(213, 19%, 18%);
 }
-ul li:active {
-  background-color: hsl(0, 0%, 100%);
-  color: hsl(213, 19%, 18%);
+.rating-option-button:focus-visible {
+  outline: 3px solid hsl(25, 97%, 53%);
+  outline-offset: 2px;
 }
-ul li.selected {
+
+.rating-option-button.selected {
   background-color: hsl(0, 0%, 100%);
   color: hsl(213, 19%, 18%);
 }
 
-button {
+.submit-button {
   text-transform: uppercase;
   letter-spacing: 1px;
   width: 100%;
@@ -165,42 +200,20 @@ button {
   transition: background-color 0.3s;
   cursor: pointer;
 }
-button:hover {
+.submit-button:hover {
   background-color: hsl(0, 0%, 100%);
+  color: hsl(213, 19%, 18%);
 }
-
-.icon {
-  display: flex;
-  justify-content: center;
-}
-.icon.star {
-  background-color: rgba(149, 158, 172, 0.1);
-  padding: 16px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-}
-
-.attribution {
-  padding-top: 40px;
-  font-size: 14px;
-}
-.attribution a {
-  color: hsl(0, 0%, 100%);
-  text-decoration: none;
-}
-.attribution a:visited {
-  color: hsl(217, 12%, 63%);
-}
-.attribution a:hover {
-  color: hsl(25, 97%, 53%);
+.submit-button:focus-visible {
+  outline: 1px solid hsl(0, 0%, 100%);
+  outline-offset: 2px;
 }
 
 .flex {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 80vh;
 }
 
 .flex-center {
@@ -208,14 +221,15 @@ button:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 24px;
+  gap: 1rem;
   text-align: center;
 }
 
 .flex-column {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 .sr-only {

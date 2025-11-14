@@ -1,34 +1,35 @@
 // utility classes
 .flex {
-  display: flex;
-  align-items: center; 
-  justify-content: center; 
-  height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 80vh;
 }
 
 .flex-center {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	text-align: center;
 }
 
 .flex-column {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 20px;
 }
 
 .sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
-  white-space: nowrap; /* Prevent line breaks */
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+	white-space: nowrap; /* Prevent line breaks */
 }
