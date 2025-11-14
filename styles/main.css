@@ -111,9 +111,8 @@ main {
 
 section {
   background-color: hsl(213, 19%, 18%);
-  padding: 20px;
-  margin: 20px;
-  border-radius: 10px;
+  padding: 30px;
+  border-radius: 25px;
   height: 400px;
 }
 @media (min-width: 768px) {
@@ -128,6 +127,7 @@ h1 {
 
 h2 {
   letter-spacing: 1px;
+  font-size: 32px;
 }
 
 p {
@@ -206,7 +206,7 @@ ul {
   width: 100%;
   background-color: hsl(25, 97%, 53%);
   border: none;
-  padding: 18px;
+  padding: 14px;
   border-radius: 26px;
   transition: background-color 0.3s;
   cursor: pointer;

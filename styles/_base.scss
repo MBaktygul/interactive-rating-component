@@ -15,7 +15,6 @@ main {
 section {
 	background-color: $dark-blue;
 	padding: 30px;
-	margin: 20px;
 	border-radius: $border-radius;
 	height: 400px;
 
@@ -30,6 +29,7 @@ h1 {
 
 h2 {
 	letter-spacing: $letter-spacing;
+	font-size: $font-size-heading;
 }
 
 p {
