@@ -102,6 +102,13 @@ body {
   color: hsl(0, 0%, 100%);
 }
 
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 section {
   background-color: hsl(213, 19%, 18%);
   padding: 20px;
@@ -148,6 +155,10 @@ ul {
 }
 
 .attribution {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, -50%);
   font-size: 14px;
 }
 
@@ -159,7 +170,7 @@ ul {
   color: hsl(25, 97%, 53%);
 }
 .attribution a:hover {
-  color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
 }
 
 .rating-option-button {
@@ -213,7 +224,6 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 80vh;
 }
 
 .flex-center {

@@ -14,6 +14,10 @@
 
 // attribution
 .attribution {
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translate(-50%, -50%);
 	font-size: 14px;
 }
 
@@ -26,7 +30,7 @@
 	}
 
 	&:hover {
-		color: $white;
+		color: $orange;
 	}
 }
 

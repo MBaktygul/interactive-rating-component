@@ -5,6 +5,13 @@ body {
 	color: $white;
 }
 
+main {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
 section {
 	background-color: $dark-blue;
 	padding: 20px;
